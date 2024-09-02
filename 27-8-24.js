@@ -1,0 +1,21 @@
+let A=5;
+let B=2;
+let C=1;
+let AB=(A&B);
+console.log("AB is "+AB);
+let BC=B&C;
+console.log("BC is"+BC);
+let ABC=(AB)|(BC);
+console.log("ABC is "+ABC );
+
+let a=5;
+let b=2;
+let c=1;
+let cb=(c|b);
+console.log("cb is "+cb);
+let ac=a&cb;
+console.log("ac is "+ac);
+let bc=cb&c;
+console.log("bc is"+bc);
+let abc= a&(c|b)&c;
+console.log("abc"  +abc);
