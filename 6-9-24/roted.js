@@ -1,8 +1,8 @@
 // Rotated
 function num(a){
-    k=2;
+    k=3;
     array=[];
-    for(i=k+1;i<a.length;i++){
+    for(i=k;i<a.length;i++){
         array.push(a[i]);
        
     }
