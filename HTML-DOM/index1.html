@@ -1,0 +1,35 @@
+<input id="nam1">
+<input id="nam2">
+<button onclick="cal()">+</button>
+<button onclick="cal()">-</button>
+<button onclick="cal()">*</button>
+<button onclick="cal()">%</button>
+<button onclick="cal()">/</button>
+<p id="result">Result</p>
+
+<script>
+    var new1 = document.getElementById("nam1")
+    var new2 = document.getElementById("nam2")
+    var result = document.getElementById("result")
+
+    function cal() {
+        var ans1 = Number(new1.value)
+        var ans2 = Number(new2.value)
+
+        var total = ans1 + ans2
+        result.textContent = total
+
+
+        var add = ans1 - ans2
+        result.textContent = add
+
+        var mul = ans1 * ans2
+        result.textContent = mul
+
+        var per = ans1 % ans2
+        result.textContent = per
+
+        var div = ans1 / ans2
+        result.textContent = div
+    }
+</script>
