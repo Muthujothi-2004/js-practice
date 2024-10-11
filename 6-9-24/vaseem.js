@@ -14,7 +14,7 @@ function str(a) {
             oddSum = oddSum + a[i];
         }
     }
-    console.log("even numbers is:" + evenStr);
+    console.log("even numbers is:" + [evenStr]);
     console.log("odd numbers is:" + oddStr);
     console.log("even numbers sum is:" + evenSum);
     console.log("odd numbers sum is:" + oddSum);
