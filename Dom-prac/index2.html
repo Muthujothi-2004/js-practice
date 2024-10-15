@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">DOM Manipulation Test</h1>
+        <button class="show">show</button>
+        <button id="addBox">Add Box</button>
+        <button id="removeBox">Remove Box</button>
+        <button id="showBoxCount">Show Box Count</button>
+        <!-- <button id="al">Count alert</button> -->
+        <h1 id="header">Hello World</h1>
+        <p>This is the first paragraph.</p>
+        <div>
+          <p>
+            hi there....
+          </p>
+          <p>
+            hi thr 2....
+          </p>
+        </div>
+        <p>This is the second paragraph.</p>
+        <button class="showH1">Show H1 Content</button>
+        <button class="showH1">Show H2 Content</button>
+        <button id="changeText">Change Text</button>
+        <a href="">Click Me</a>
+        <!-- <button id="abut">ATag</button> -->
+    </div>
+
+<script>
+ const sh=document.getElementsByClassName("show")
+ const h=document.querySelector("header")
+ const paragraphs=document.querySelectorAll("p")
+ const ch=document.getElementById("changeText")
+
+
+
+//  
+
+// sh[0].addEventListener("click",()=>{
+//     alert("Hiii")
+// })
+
+
+// ch.addEventListener("click",()=>{
+//     paragraphs.forEach((para)=>{
+//         console.log(para.textContent)
+//     })
+// })
+
+ch.addEventListener("click",()=>{
+    paragraphs.forEach(console.log(paragraphs[1].textContent))
+})
+
+// function add(){
+//     paragraphs.forEach((para)=>{
+//         console.log(para.textContent)
+//     });
+// }
+
+// 2nd para
+
+// function par(){
+//     paragraphs.forEach( console.log(paragraphs[1].textContent))
+   
+// }
+
+
+
+
+</script>
+
+</body>
+</html>

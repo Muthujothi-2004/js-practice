@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Test</title>
+    <style>
+        .box-style {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="header">DOM Manipulation Test</h1>
+        <button id="show">show</button>
+        <button id="addBox">Add Box</button>
+        <button id="removeBox">Remove Box</button>
+        <button id="showBoxCount">Show Box Count</button>
+        <!-- <button id="al">Count alert</button> -->
+        <!-- <button id="abut">ATag</button> -->
+    </div>
+    <script>
+        const ad = document.getElementById("addBox")
+        const re=document.getElementById("removeBox")
+        const sh=document.getElementById("showBoxCount")
+        const div = document.querySelector(".container")
+        const alt = document.getElementById("al")
+        const abutton = document.getElementById("abut");
+        const show=document.getElementById("show")
+        const h=document.querySelector(".header");
+        var count=0;
+
+        // 1
+       show.addEventListener("click",()=>{
+        alert(h.textContent)
+       })
+
+       
+        alert("alert");
+
+        // 2
+        ad.addEventListener("click", () => {
+            const NBox = document.createElement("div");
+            NBox.textContent = "New Box"
+            NBox.style.width="100px"
+            NBox.style.height="100px"
+            NBox.style.backgroundColor="green"
+            NBox.style.margin="10px"
+            NBox.classList.add="addb"
+            div.appendChild(NBox);
+            count=count+1;
+
+        });
+
+        // 3
+        sh.addEventListener("click", () => {
+            const al=document.querySelector(".addb");
+            alert(count)
+        })
+
+
+        4
+        abutton.addEventListener("click", () => {
+            const atag = document.createElement("a")
+            atag.href("WWW.youTube.com")
+            // atag.setAttribute=("href","www.youTube.com")
+            atag.textContent = "Hi There";
+
+        })
+
+        const a=document.createElement("a")
+        a.href=("https://www.youtube.com/")
+        a.textContent="Hi There"
+        div.appendChild(a)
+
+
+
+
+        re.addEventListener("click",()=>{
+            const remo=document.querySelector(".addb")
+            remo.remove()
+        })
+
+
+
+
+
+
+    </script>
+    <!-- 1. Show alert of the text content of the h1 element using class -->
+    <!-- 2. Create a new div and append the child to the container, with the text content New Box-->
+    <!-- 3. Show the number of boxes in an alert -->
+    <!-- 4. Create an <a> element on button click , with text content "Hi There" and set href -->
+</body>
+
+</html>
