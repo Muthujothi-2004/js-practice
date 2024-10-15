@@ -1,0 +1,27 @@
+<!-- Change the h1 content as 'Text Changed!'. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text Example</title>
+</head>
+<body>
+    <h1 id="header">Original Text</h1>
+    <button id="changeTextButton">Change Text</button>
+    <script>
+      const h=document.getElementById("header")
+      const ch=document.getElementById("changeTextButton")
+
+      ch.addEventListener("click",()=>{
+        h.textContent="Text Changed";
+      });
+
+    </script>
+</body>
+</html>
+
+
+
