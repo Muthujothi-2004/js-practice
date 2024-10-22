@@ -5,6 +5,9 @@ const Rebutton =document.querySelector(".Rebutton")
 const high=document.querySelector(".high")
 const nam=document.getElementById("name")
 const lists=document.querySelectorAll(".color")
+const h=document.getElementById("colors")
+
+
 
 // button.addEventListener("click", ()=>{
 //  const A=document.createElement("li")

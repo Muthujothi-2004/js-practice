@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Sign Up Form</h1>
+
+    <form id="signupForm" novalidate>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <span id="emailError"></span>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required minlength="8">
+        <span id="passwordError"></span>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" required>
+        <span id="confirmPasswordError"></span>
+
+        <button type="submit">Sign Up</button>
+    </form>
+
+    <script>
+       const form=document.getElementById("signupForm");
+       const email=document.getElementById("email");
+       const password=document.getElementById("password");
+       const confirmPassword=document.getElementById("confirmPassword");
+       const emailError=document.getElementById("emailError");
+       const passwordError=document.getElementById("passwordError");
+       const confirmPasswordError=document.getElementById("confirmPasswordError");
+
+       form.addEventListener("submit",function(event){
+          emailError.textContent="";
+          passwordError.textContent="";
+          confirmPasswordError.textContent="";
+
+          if(!email.validity.valid){
+            if(email.validity.valueMissing){
+                emailError.textContent=" email required"
+            }
+            else if(email.validity.typeMismatch){
+                emailError.textContent="enter valid email"
+            }
+            event.preventDefault()
+          }
+
+           if(!password.checkValidity()){
+            if(password.validity.valueMissing){
+                passwordError.textContent="password requier"
+            }
+            else if(password.validity.tooShort){
+                passwordError.textContent="please enter 8 character"
+            }
+            event.preventDefault()
+           }
+
+           if(password  !==confirmPassword){
+            confirmPasswordError.textContent="password not match"
+           }
+           event.preventDefault()
+
+       });
+
+       password.addEventListener("input", function(event){
+            passwordError.textContent="";
+            if(password.validity.tooShort){
+                passwordError.textContent=`Password must be at least ${password.minLength} chareacter; your enter ${password.value.length}`
+            }
+       });
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
