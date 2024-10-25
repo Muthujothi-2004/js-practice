@@ -2,8 +2,6 @@ function mainFunction(a){
  
   console.log(lcm(a[0],a[1]))
   console.log(gcd(a[2],a[3]))
-
-
   }
 
 
@@ -18,7 +16,6 @@ function lcm(b,c){
         
     }  
 }
-
 function gcd(d,e){
    let min=Math.min(d,e)
    for(i=min;i>=0;i--){

@@ -1,7 +1,7 @@
 let empty=[]
 function mainFunction(a){
   odd(a);
-  console.log(gdc(empty[1],empty[2]))
+  console.log(gcd(empty[1],empty[2]))
 }
 function odd(a){
 for(i=0;i<a.length;i++){
@@ -19,4 +19,4 @@ for(i=0;i<a.length;i++){
     }
  }
 mainFunction([2,1,4,3,5,6])
-// console.log(empty)
+console.log(empty)

@@ -10,8 +10,6 @@ function prime(a) {
         }
 
     }
-
-
 }
 function primeFunction(b) {
     let isprime = true;

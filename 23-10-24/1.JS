@@ -5,7 +5,6 @@ function mainFunction(a){
  }
 
 }
-
 function fact(b){
 let fac=1;
 for(j=1;j<=b;j++){
