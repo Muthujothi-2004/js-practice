@@ -20,37 +20,36 @@
 
 // NO
 
-// function power(n){
-//  let isPower= false;
-//     for(i=1;i<=n;i++){
-//         if(3**i===n){
-//             isPower= true;
-//              console.log("yes")
-      
-//         }
-        
-//     }
-//     if(!isPower){
-//         console.log("no")
-//     }
-
-// }
-// power(81)
-
 function power(n){
-    let isPower=false
- for(i=1;i<n;i++){
-    if(3**i===n){
-        isPower=true;
-        break;
+ let isPower= false;
+    for(i=1;i<=n;i++){
+        if(3**i===n){
+            isPower= true;
+             console.log("yes")
+      
+        }
+        
+    }
+    if(!isPower){
+        console.log("no")
     }
 
- }
- if(isPower){
-    console.log(i)
- }
- else{
-    console.log("no")
- }
 }
-power(25)
+power(81)
+
+function power(a){
+
+    let isPower=true;
+    for(i=1;i<=a;i++){
+        if(3**i===a){
+            console.log("yes")
+            isPower=flase
+        }
+    }
+
+    if(isPower){
+        console.log("no")
+    }
+
+}
+power(81)
