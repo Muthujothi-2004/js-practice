@@ -26,30 +26,3 @@ function missing(n){
 missing([1,2,3,4,6])
 
 
-// function missing(n) {
-//     let max = n[0];
-//     let min = n[0];
-//     let total = 0;
-
-//     for (let i = 0; i < n.length; i++) {
-//         total += n[i];  // Corrected sum calculation
-
-//         if (n[i] < min) {
-//             min = n[i]; // Store min value correctly
-//         }
-//         if (n[i] > max) {
-//             max = n[i]; // Store max value correctly
-//         }
-//     }
-
-//     let total2 = 0;
-//     for (let i = min; i <= max; i++) { 
-//         total2 += i; // Sum of complete range
-//     }
-
-//     let result = total2 - total; // Missing number
-//     console.log(result);
-// }
-
-// missing([1, 2, 3, 4, 6]);  // Output: 5
-

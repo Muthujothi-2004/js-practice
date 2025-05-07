@@ -16,3 +16,11 @@ console.log("a is "+ a);
 console.log("b is "+b);
 
 
+
+
+
+
+
+console.log(typeof(5+"2"))
+
+

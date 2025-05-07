@@ -1,0 +1,15 @@
+1. What are the basic data types in JavaScript?
+
+Ans :  Data types two prmitive and non-prmitive
+premitive : number , string , boolean , symbol , bigint 
+non-premitive : object , function , array , date.
+
+2. Explain the difference between null and undefined.
+
+Ans : null and undefined represented always absence values . 
+NULL: starting stage la empty value va insulaization pannurathukku null use pannikalam .
+UNDEFINED : Variabel la valuse define pannalana undefined nu  show ahgum .
+
+ 3. What is type coercion in JavaScript?
+
+
